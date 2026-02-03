@@ -1,0 +1,727 @@
+{
+  "generated_at": "2026-02-03T14:52:03.695179",
+  "mode": "mock",
+  "summary": {
+    "total_analyzed": 52,
+    "friction_rate": 0.7307692307692307,
+    "by_category": {
+      "HIGH_FRICTION": 24,
+      "CONFUSION": 14,
+      "BENIGN": 14
+    },
+    "by_status": {
+      "STALLED_HIGH_RISK": 24,
+      "STALLED_LOW_RISK": 14,
+      "BENIGN": 14
+    }
+  },
+  "by_friction_type": {
+    "VIN_REQUEST": {
+      "total": 4,
+      "friction_count": 3,
+      "friction_rate": 0.75
+    },
+    "OTHER": {
+      "total": 23,
+      "friction_count": 13,
+      "friction_rate": 0.5652173913043478
+    },
+    "DOCUMENT_UPLOAD": {
+      "total": 4,
+      "friction_count": 4,
+      "friction_rate": 1.0
+    },
+    "BANKING_INFO": {
+      "total": 2,
+      "friction_count": 2,
+      "friction_rate": 1.0
+    },
+    "INSURANCE_JARGON": {
+      "total": 5,
+      "friction_count": 5,
+      "friction_rate": 1.0
+    },
+    "ADDRESS_REQUEST": {
+      "total": 2,
+      "friction_count": 1,
+      "friction_rate": 0.5
+    },
+    "COVERAGE_QUESTION": {
+      "total": 5,
+      "friction_count": 3,
+      "friction_rate": 0.6
+    },
+    "LICENSE_REQUEST": {
+      "total": 4,
+      "friction_count": 4,
+      "friction_rate": 1.0
+    },
+    "MILEAGE_REQUEST": {
+      "total": 1,
+      "friction_count": 1,
+      "friction_rate": 1.0
+    },
+    "DATE_REQUEST": {
+      "total": 1,
+      "friction_count": 1,
+      "friction_rate": 1.0
+    },
+    "SSN_REQUEST": {
+      "total": 1,
+      "friction_count": 1,
+      "friction_rate": 1.0
+    }
+  },
+  "top_friction_points": [
+    {
+      "question": "No problem! You can usually find your VIN on your insurance card or registration document.",
+      "total": 1,
+      "friction_count": 1,
+      "friction_rate": 1.0,
+      "examples": [
+        {
+          "chat_id": "high-friction-001",
+          "user_response": "No response"
+        }
+      ]
+    },
+    {
+      "question": "Yes! It's on the driver's side dashboard near the windshield, or on the driver's door jamb.",
+      "total": 1,
+      "friction_count": 1,
+      "friction_rate": 1.0,
+      "examples": [
+        {
+          "chat_id": "high-friction-002",
+          "user_response": "Ok let me go check... actually it's raining outside, can I do this later?"
+        }
+      ]
+    },
+    {
+      "question": "No worries, you can also find it on any previous insurance documents you might have.",
+      "total": 1,
+      "friction_count": 1,
+      "friction_rate": 1.0,
+      "examples": [
+        {
+          "chat_id": "high-friction-003",
+          "user_response": "No response"
+        }
+      ]
+    },
+    {
+      "question": "That's okay! You can send the photo anytime today.",
+      "total": 1,
+      "friction_count": 1,
+      "friction_rate": 1.0,
+      "examples": [
+        {
+          "chat_id": "high-friction-004",
+          "user_response": "No response"
+        }
+      ]
+    },
+    {
+      "question": "I understand! The insurance card helps us give you the most accurate rate comparison.",
+      "total": 1,
+      "friction_count": 1,
+      "friction_rate": 1.0,
+      "examples": [
+        {
+          "chat_id": "high-friction-005",
+          "user_response": "No response"
+        }
+      ]
+    },
+    {
+      "question": "I completely understand your concern. We use bank-level encryption and your data is protected.",
+      "total": 1,
+      "friction_count": 1,
+      "friction_rate": 1.0,
+      "examples": [
+        {
+          "chat_id": "high-friction-006",
+          "user_response": "No response"
+        }
+      ]
+    },
+    {
+      "question": "UM/UIM stands for Uninsured/Underinsured Motorist coverage. It protects you if you're hit by a drive",
+      "total": 1,
+      "friction_count": 1,
+      "friction_rate": 1.0,
+      "examples": [
+        {
+          "chat_id": "confusion-001",
+          "user_response": "No response"
+        }
+      ]
+    },
+    {
+      "question": "A garaging address is where your car is primarily parked overnight. If that's your home, they're the",
+      "total": 1,
+      "friction_count": 1,
+      "friction_rate": 1.0,
+      "examples": [
+        {
+          "chat_id": "confusion-002",
+          "user_response": "No response"
+        }
+      ]
+    },
+    {
+      "question": "Your current policy has a 80/20 split with aggregate limits of 100/300/100. Want to keep those or ad",
+      "total": 1,
+      "friction_count": 1,
+      "friction_rate": 1.0,
+      "examples": [
+        {
+          "chat_id": "confusion-003",
+          "user_response": "I literally have no idea what any of that means lol"
+        }
+      ]
+    },
+    {
+      "question": "Yes, for legal documents we use secure electronic signatures via email. It only takes a minute!",
+      "total": 1,
+      "friction_count": 1,
+      "friction_rate": 1.0,
+      "examples": [
+        {
+          "chat_id": "confusion-004",
+          "user_response": "No response"
+        }
+      ]
+    },
+    {
+      "question": "Congratulations on the new car! You can find the VIN on the window sticker or purchase documents.",
+      "total": 1,
+      "friction_count": 1,
+      "friction_rate": 1.0,
+      "examples": [
+        {
+          "chat_id": "high-friction-007",
+          "user_response": "Those are all with the dealer still, picking up the car tomorrow"
+        }
+      ]
+    },
+    {
+      "question": "That's fine! I just need the license number then.",
+      "total": 1,
+      "friction_count": 1,
+      "friction_rate": 1.0,
+      "examples": [
+        {
+          "chat_id": "high-friction-008",
+          "user_response": "She's at school, I don't have it memorized"
+        }
+      ]
+    },
+    {
+      "question": "PIP is Personal Injury Protection. It covers medical expenses regardless of who's at fault.",
+      "total": 1,
+      "friction_count": 1,
+      "friction_rate": 1.0,
+      "examples": [
+        {
+          "chat_id": "confusion-005",
+          "user_response": "But I already have health insurance through work..."
+        }
+      ]
+    },
+    {
+      "question": "I understand! The photos help us verify the condition and give you the best rate. You can take them ",
+      "total": 1,
+      "friction_count": 1,
+      "friction_rate": 1.0,
+      "examples": [
+        {
+          "chat_id": "high-friction-009",
+          "user_response": "My phone storage is full, I can't take any pics right now"
+        }
+      ]
+    },
+    {
+      "question": "I need the date in MM/DD/YYYY format. For example: 01/15/2026",
+      "total": 1,
+      "friction_count": 1,
+      "friction_rate": 1.0,
+      "examples": [
+        {
+          "chat_id": "confusion-006",
+          "user_response": "That's what I said, January 15th. Why isn't it working?"
+        }
+      ]
+    }
+  ],
+  "classifications": [
+    {
+      "chat_id": "high-friction-001",
+      "status": "STALLED_HIGH_RISK",
+      "category": "HIGH_FRICTION",
+      "reason": "HIGH_FRICTION:VIN_REQUEST",
+      "confidence": 0.92,
+      "evidence": "User said: 'Ugh, I'm at work right now. I don't have that on m...'",
+      "question_type": "VIN_REQUEST"
+    },
+    {
+      "chat_id": "high-friction-002",
+      "status": "STALLED_HIGH_RISK",
+      "category": "HIGH_FRICTION",
+      "reason": "HIGH_FRICTION:OTHER",
+      "confidence": 0.92,
+      "evidence": "User said: 'Ok let me go check... actually it's raining outsid...'",
+      "question_type": "OTHER"
+    },
+    {
+      "chat_id": "high-friction-003",
+      "status": "STALLED_HIGH_RISK",
+      "category": "HIGH_FRICTION",
+      "reason": "HIGH_FRICTION:OTHER",
+      "confidence": 0.92,
+      "evidence": "User said: 'I don't have my wallet with me, it's in my other b...'",
+      "question_type": "OTHER"
+    },
+    {
+      "chat_id": "high-friction-004",
+      "status": "STALLED_HIGH_RISK",
+      "category": "HIGH_FRICTION",
+      "reason": "HIGH_FRICTION:DOCUMENT_UPLOAD",
+      "confidence": 0.92,
+      "evidence": "User said: 'My car is parked in a garage at work, I can't get ...'",
+      "question_type": "DOCUMENT_UPLOAD"
+    },
+    {
+      "chat_id": "high-friction-005",
+      "status": "STALLED_HIGH_RISK",
+      "category": "HIGH_FRICTION",
+      "reason": "HIGH_FRICTION:OTHER",
+      "confidence": 0.92,
+      "evidence": "User said: 'I have to dig through my glove box for that... thi...'",
+      "question_type": "OTHER"
+    },
+    {
+      "chat_id": "high-friction-006",
+      "status": "STALLED_HIGH_RISK",
+      "category": "HIGH_FRICTION",
+      "reason": "HIGH_FRICTION:BANKING_INFO",
+      "confidence": 0.92,
+      "evidence": "User said: 'Whoa, SSN? I'm not comfortable sharing that over t...'",
+      "question_type": "BANKING_INFO"
+    },
+    {
+      "chat_id": "confusion-001",
+      "status": "STALLED_LOW_RISK",
+      "category": "CONFUSION",
+      "reason": "CONFUSION",
+      "confidence": 0.85,
+      "evidence": "User said: 'Um what's UM/UIM? I don't understand all these ter...'",
+      "question_type": "INSURANCE_JARGON"
+    },
+    {
+      "chat_id": "confusion-002",
+      "status": "STALLED_LOW_RISK",
+      "category": "CONFUSION",
+      "reason": "CONFUSION",
+      "confidence": 0.85,
+      "evidence": "User said: 'Huh? What's a garaging address? I park in my drive...'",
+      "question_type": "ADDRESS_REQUEST"
+    },
+    {
+      "chat_id": "confusion-003",
+      "status": "STALLED_LOW_RISK",
+      "category": "CONFUSION",
+      "reason": "CONFUSION",
+      "confidence": 0.85,
+      "evidence": "User said: 'I literally have no idea what any of that means lo...'",
+      "question_type": "OTHER"
+    },
+    {
+      "chat_id": "confusion-004",
+      "status": "STALLED_LOW_RISK",
+      "category": "CONFUSION",
+      "reason": "CONFUSION",
+      "confidence": 0.85,
+      "evidence": "User said: 'Wait, I thought we were doing everything by text? ...'",
+      "question_type": "OTHER"
+    },
+    {
+      "chat_id": "benign-001",
+      "status": "BENIGN",
+      "category": "BENIGN",
+      "reason": "BENIGN",
+      "confidence": 0.7,
+      "evidence": "User said: 'Hey yeah give me like 10 min, in a meeting'",
+      "question_type": "OTHER"
+    },
+    {
+      "chat_id": "benign-002",
+      "status": "BENIGN",
+      "category": "BENIGN",
+      "reason": "BENIGN",
+      "confidence": 0.7,
+      "evidence": "User said: 'Let me think about it and talk to my husband tonig...'",
+      "question_type": "OTHER"
+    },
+    {
+      "chat_id": "benign-003",
+      "status": "BENIGN",
+      "category": "BENIGN",
+      "reason": "BENIGN",
+      "confidence": 0.7,
+      "evidence": "User said: 'That's more than I'm paying now. Let me check a fe...'",
+      "question_type": "COVERAGE_QUESTION"
+    },
+    {
+      "chat_id": "benign-004",
+      "status": "BENIGN",
+      "category": "BENIGN",
+      "reason": "BENIGN",
+      "confidence": 0.7,
+      "evidence": "User said: '90210'",
+      "question_type": "OTHER"
+    },
+    {
+      "chat_id": "benign-005",
+      "status": "BENIGN",
+      "category": "BENIGN",
+      "reason": "BENIGN",
+      "confidence": 0.7,
+      "evidence": "User said: 'Nope, thanks so much!'",
+      "question_type": "OTHER"
+    },
+    {
+      "chat_id": "high-friction-007",
+      "status": "STALLED_HIGH_RISK",
+      "category": "HIGH_FRICTION",
+      "reason": "HIGH_FRICTION:VIN_REQUEST",
+      "confidence": 0.92,
+      "evidence": "User said: 'Those are all with the dealer still, picking up th...'",
+      "question_type": "VIN_REQUEST"
+    },
+    {
+      "chat_id": "high-friction-008",
+      "status": "STALLED_HIGH_RISK",
+      "category": "HIGH_FRICTION",
+      "reason": "HIGH_FRICTION:LICENSE_REQUEST",
+      "confidence": 0.92,
+      "evidence": "User said: 'She's at school, I don't have it memorized'",
+      "question_type": "LICENSE_REQUEST"
+    },
+    {
+      "chat_id": "confusion-005",
+      "status": "STALLED_LOW_RISK",
+      "category": "CONFUSION",
+      "reason": "CONFUSION",
+      "confidence": 0.85,
+      "evidence": "User said: 'But I already have health insurance through work.....'",
+      "question_type": "LICENSE_REQUEST"
+    },
+    {
+      "chat_id": "high-friction-009",
+      "status": "STALLED_HIGH_RISK",
+      "category": "HIGH_FRICTION",
+      "reason": "HIGH_FRICTION:DOCUMENT_UPLOAD",
+      "confidence": 0.92,
+      "evidence": "User said: 'My phone storage is full, I can't take any pics ri...'",
+      "question_type": "DOCUMENT_UPLOAD"
+    },
+    {
+      "chat_id": "benign-006",
+      "status": "BENIGN",
+      "category": "BENIGN",
+      "reason": "BENIGN",
+      "confidence": 0.7,
+      "evidence": "User said: 'Geico. Hey I gotta run, kids are home. Can we fini...'",
+      "question_type": "OTHER"
+    },
+    {
+      "chat_id": "confusion-006",
+      "status": "STALLED_LOW_RISK",
+      "category": "CONFUSION",
+      "reason": "CONFUSION",
+      "confidence": 0.85,
+      "evidence": "User said: 'That's what I said, January 15th. Why isn't it wor...'",
+      "question_type": "OTHER"
+    },
+    {
+      "chat_id": "high-friction-010",
+      "status": "STALLED_HIGH_RISK",
+      "category": "HIGH_FRICTION",
+      "reason": "HIGH_FRICTION:OTHER",
+      "confidence": 0.92,
+      "evidence": "User said: 'Not really, how do I even check that?'",
+      "question_type": "OTHER"
+    },
+    {
+      "chat_id": "hf-ext-001",
+      "status": "STALLED_HIGH_RISK",
+      "category": "HIGH_FRICTION",
+      "reason": "HIGH_FRICTION:VIN_REQUEST",
+      "confidence": 0.92,
+      "evidence": "User said: 'The bike is in storage for winter, 2 hours away'",
+      "question_type": "VIN_REQUEST"
+    },
+    {
+      "chat_id": "hf-ext-002",
+      "status": "STALLED_HIGH_RISK",
+      "category": "HIGH_FRICTION",
+      "reason": "HIGH_FRICTION:OTHER",
+      "confidence": 0.92,
+      "evidence": "User said: 'I switched insurers 3 times in 2 years, this is go...'",
+      "question_type": "OTHER"
+    },
+    {
+      "chat_id": "hf-ext-003",
+      "status": "STALLED_HIGH_RISK",
+      "category": "HIGH_FRICTION",
+      "reason": "HIGH_FRICTION:MILEAGE_REQUEST",
+      "confidence": 0.92,
+      "evidence": "User said: 'I'd have to go outside to check that, it's freezin...'",
+      "question_type": "MILEAGE_REQUEST"
+    },
+    {
+      "chat_id": "hf-ext-004",
+      "status": "STALLED_HIGH_RISK",
+      "category": "HIGH_FRICTION",
+      "reason": "HIGH_FRICTION:OTHER",
+      "confidence": 0.92,
+      "evidence": "User said: 'Ugh I'd have to dig through my paperwork for that'",
+      "question_type": "OTHER"
+    },
+    {
+      "chat_id": "hf-ext-005",
+      "status": "STALLED_HIGH_RISK",
+      "category": "HIGH_FRICTION",
+      "reason": "HIGH_FRICTION:LICENSE_REQUEST",
+      "confidence": 0.92,
+      "evidence": "User said: 'He's traveling for work this week, I don't have ac...'",
+      "question_type": "LICENSE_REQUEST"
+    },
+    {
+      "chat_id": "hf-ext-006",
+      "status": "STALLED_HIGH_RISK",
+      "category": "HIGH_FRICTION",
+      "reason": "HIGH_FRICTION:DOCUMENT_UPLOAD",
+      "confidence": 0.92,
+      "evidence": "User said: 'The scratch is tiny and hard to photograph, my pho...'",
+      "question_type": "DOCUMENT_UPLOAD"
+    },
+    {
+      "chat_id": "hf-ext-007",
+      "status": "STALLED_HIGH_RISK",
+      "category": "HIGH_FRICTION",
+      "reason": "HIGH_FRICTION:BANKING_INFO",
+      "confidence": 0.92,
+      "evidence": "User said: 'I'm not giving banking info over text message, tha...'",
+      "question_type": "BANKING_INFO"
+    },
+    {
+      "chat_id": "hf-ext-008",
+      "status": "STALLED_HIGH_RISK",
+      "category": "HIGH_FRICTION",
+      "reason": "HIGH_FRICTION:DATE_REQUEST",
+      "confidence": 0.92,
+      "evidence": "User said: 'It was like 3 years ago, I'd have to find the bill...'",
+      "question_type": "DATE_REQUEST"
+    },
+    {
+      "chat_id": "hf-ext-009",
+      "status": "STALLED_HIGH_RISK",
+      "category": "HIGH_FRICTION",
+      "reason": "HIGH_FRICTION:OTHER",
+      "confidence": 0.92,
+      "evidence": "User said: 'I have no idea what brand our alarm is, my landlor...'",
+      "question_type": "OTHER"
+    },
+    {
+      "chat_id": "hf-ext-010",
+      "status": "STALLED_HIGH_RISK",
+      "category": "HIGH_FRICTION",
+      "reason": "HIGH_FRICTION:DOCUMENT_UPLOAD",
+      "confidence": 0.92,
+      "evidence": "User said: 'I think I threw that away when it came in the mail...'",
+      "question_type": "DOCUMENT_UPLOAD"
+    },
+    {
+      "chat_id": "conf-ext-001",
+      "status": "STALLED_LOW_RISK",
+      "category": "CONFUSION",
+      "reason": "CONFUSION",
+      "confidence": 0.85,
+      "evidence": "User said: 'A what now?'",
+      "question_type": "INSURANCE_JARGON"
+    },
+    {
+      "chat_id": "conf-ext-002",
+      "status": "STALLED_LOW_RISK",
+      "category": "CONFUSION",
+      "reason": "CONFUSION",
+      "confidence": 0.85,
+      "evidence": "User said: 'What does CSL mean?'",
+      "question_type": "INSURANCE_JARGON"
+    },
+    {
+      "chat_id": "conf-ext-003",
+      "status": "STALLED_LOW_RISK",
+      "category": "CONFUSION",
+      "reason": "CONFUSION",
+      "confidence": 0.85,
+      "evidence": "User said: 'I don't know the difference honestly'",
+      "question_type": "COVERAGE_QUESTION"
+    },
+    {
+      "chat_id": "conf-ext-004",
+      "status": "STALLED_LOW_RISK",
+      "category": "CONFUSION",
+      "reason": "CONFUSION",
+      "confidence": 0.85,
+      "evidence": "User said: 'Those numbers mean nothing to me, can you explain ...'",
+      "question_type": "INSURANCE_JARGON"
+    },
+    {
+      "chat_id": "conf-ext-005",
+      "status": "STALLED_LOW_RISK",
+      "category": "CONFUSION",
+      "reason": "CONFUSION",
+      "confidence": 0.85,
+      "evidence": "User said: 'What's the difference between those two?'",
+      "question_type": "COVERAGE_QUESTION"
+    },
+    {
+      "chat_id": "conf-ext-006",
+      "status": "STALLED_LOW_RISK",
+      "category": "CONFUSION",
+      "reason": "CONFUSION",
+      "confidence": 0.85,
+      "evidence": "User said: 'It's in my driveway... is that garaged or exposed?'",
+      "question_type": "OTHER"
+    },
+    {
+      "chat_id": "conf-ext-007",
+      "status": "STALLED_LOW_RISK",
+      "category": "CONFUSION",
+      "reason": "CONFUSION",
+      "confidence": 0.85,
+      "evidence": "User said: 'Stack it? Like on top of something? I don't get it'",
+      "question_type": "COVERAGE_QUESTION"
+    },
+    {
+      "chat_id": "conf-ext-008",
+      "status": "STALLED_LOW_RISK",
+      "category": "CONFUSION",
+      "reason": "CONFUSION",
+      "confidence": 0.85,
+      "evidence": "User said: 'Tort? Like the dessert?'",
+      "question_type": "INSURANCE_JARGON"
+    },
+    {
+      "chat_id": "ben-ext-001",
+      "status": "BENIGN",
+      "category": "BENIGN",
+      "reason": "BENIGN",
+      "confidence": 0.7,
+      "evidence": "User said: 'Yeah but I'm driving right now, can't really text'",
+      "question_type": "OTHER"
+    },
+    {
+      "chat_id": "ben-ext-002",
+      "status": "BENIGN",
+      "category": "BENIGN",
+      "reason": "BENIGN",
+      "confidence": 0.7,
+      "evidence": "User said: 'That's pretty good! Let me compare with one more c...'",
+      "question_type": "OTHER"
+    },
+    {
+      "chat_id": "ben-ext-003",
+      "status": "BENIGN",
+      "category": "BENIGN",
+      "reason": "BENIGN",
+      "confidence": 0.7,
+      "evidence": "User said: 'I need to wait until payday, that's Friday'",
+      "question_type": "OTHER"
+    },
+    {
+      "chat_id": "ben-ext-004",
+      "status": "BENIGN",
+      "category": "BENIGN",
+      "reason": "BENIGN",
+      "confidence": 0.7,
+      "evidence": "User said: 'Nope, all good for now. I'll be in touch!'",
+      "question_type": "COVERAGE_QUESTION"
+    },
+    {
+      "chat_id": "ben-ext-005",
+      "status": "BENIGN",
+      "category": "BENIGN",
+      "reason": "BENIGN",
+      "confidence": 0.7,
+      "evidence": "User said: 'March 15, 1985'",
+      "question_type": "ADDRESS_REQUEST"
+    },
+    {
+      "chat_id": "ben-ext-006",
+      "status": "BENIGN",
+      "category": "BENIGN",
+      "reason": "BENIGN",
+      "confidence": 0.7,
+      "evidence": "User said: 'Maybe 10-12k a year'",
+      "question_type": "OTHER"
+    },
+    {
+      "chat_id": "ben-ext-007",
+      "status": "BENIGN",
+      "category": "BENIGN",
+      "reason": "BENIGN",
+      "confidence": 0.7,
+      "evidence": "User said: 'Awesome, thanks for making this easy!'",
+      "question_type": "VIN_REQUEST"
+    },
+    {
+      "chat_id": "ben-ext-008",
+      "status": "BENIGN",
+      "category": "BENIGN",
+      "reason": "BENIGN",
+      "confidence": 0.7,
+      "evidence": "User said: 'Yes! Sorry been crazy busy at work. Can we continu...'",
+      "question_type": "OTHER"
+    },
+    {
+      "chat_id": "hf-ext-011",
+      "status": "STALLED_HIGH_RISK",
+      "category": "HIGH_FRICTION",
+      "reason": "HIGH_FRICTION:SSN_REQUEST",
+      "confidence": 0.92,
+      "evidence": "User said: 'I really don't want to share my SSN via text'",
+      "question_type": "SSN_REQUEST"
+    },
+    {
+      "chat_id": "hf-ext-012",
+      "status": "STALLED_HIGH_RISK",
+      "category": "HIGH_FRICTION",
+      "reason": "HIGH_FRICTION:OTHER",
+      "confidence": 0.92,
+      "evidence": "User said: 'My old insurance was with my ex, I don't have acce...'",
+      "question_type": "OTHER"
+    },
+    {
+      "chat_id": "hf-ext-013",
+      "status": "STALLED_HIGH_RISK",
+      "category": "HIGH_FRICTION",
+      "reason": "HIGH_FRICTION:LICENSE_REQUEST",
+      "confidence": 0.92,
+      "evidence": "User said: 'I'm uncomfortable sending photos of my ID over tex...'",
+      "question_type": "LICENSE_REQUEST"
+    },
+    {
+      "chat_id": "hf-ext-014",
+      "status": "STALLED_HIGH_RISK",
+      "category": "HIGH_FRICTION",
+      "reason": "HIGH_FRICTION:OTHER",
+      "confidence": 0.92,
+      "evidence": "User said: 'That seems like extra work, can't you just look it...'",
+      "question_type": "OTHER"
+    }
+  ]
+}
