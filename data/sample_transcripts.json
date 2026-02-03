@@ -1,0 +1,241 @@
+{
+  "transcripts": [
+    {
+      "chat_id": "high-friction-001",
+      "expected_category": "HIGH_FRICTION",
+      "expected_reason": "VIN_REQUEST",
+      "history": [
+        {"role": "bot", "text": "Hi! I can help you get an auto insurance quote. To get started, I'll need your VIN number."},
+        {"role": "user", "text": "Ugh, I'm at work right now. I don't have that on me."},
+        {"role": "bot", "text": "No problem! You can usually find your VIN on your insurance card or registration document."}
+      ]
+    },
+    {
+      "chat_id": "high-friction-002",
+      "expected_category": "HIGH_FRICTION",
+      "expected_reason": "VIN_REQUEST",
+      "history": [
+        {"role": "bot", "text": "Great! To finalize your quote, I just need your vehicle identification number (VIN)."},
+        {"role": "user", "text": "Where do I even find that? Is it on my car somewhere?"},
+        {"role": "bot", "text": "Yes! It's on the driver's side dashboard near the windshield, or on the driver's door jamb."},
+        {"role": "user", "text": "Ok let me go check... actually it's raining outside, can I do this later?"}
+      ]
+    },
+    {
+      "chat_id": "high-friction-003",
+      "expected_category": "HIGH_FRICTION",
+      "expected_reason": "LICENSE_REQUEST",
+      "history": [
+        {"role": "bot", "text": "Almost done! I just need your driver's license number to complete the quote."},
+        {"role": "user", "text": "I don't have my wallet with me, it's in my other bag"},
+        {"role": "bot", "text": "No worries, you can also find it on any previous insurance documents you might have."}
+      ]
+    },
+    {
+      "chat_id": "high-friction-004",
+      "expected_category": "HIGH_FRICTION",
+      "expected_reason": "DOCUMENT_UPLOAD",
+      "history": [
+        {"role": "bot", "text": "To verify your vehicle, please upload a photo of your car showing the license plate."},
+        {"role": "user", "text": "My car is parked in a garage at work, I can't get to it right now"},
+        {"role": "bot", "text": "That's okay! You can send the photo anytime today."}
+      ]
+    },
+    {
+      "chat_id": "high-friction-005",
+      "expected_category": "HIGH_FRICTION",
+      "expected_reason": "DOCUMENT_UPLOAD",
+      "history": [
+        {"role": "bot", "text": "Perfect! Now I just need you to upload a photo of your current insurance card."},
+        {"role": "user", "text": "I have to dig through my glove box for that... this is a lot of work just for a quote"},
+        {"role": "bot", "text": "I understand! The insurance card helps us give you the most accurate rate comparison."}
+      ]
+    },
+    {
+      "chat_id": "high-friction-006",
+      "expected_category": "HIGH_FRICTION",
+      "expected_reason": "GENERAL",
+      "history": [
+        {"role": "bot", "text": "To add your spouse to the policy, I'll need their full legal name, date of birth, and social security number."},
+        {"role": "user", "text": "Whoa, SSN? I'm not comfortable sharing that over text"},
+        {"role": "bot", "text": "I completely understand your concern. We use bank-level encryption and your data is protected."}
+      ]
+    },
+    {
+      "chat_id": "confusion-001",
+      "expected_category": "CONFUSION",
+      "expected_reason": "JARGON",
+      "history": [
+        {"role": "bot", "text": "Would you like to add comprehensive coverage with a $500 deductible, or go with liability-only with UM/UIM?"},
+        {"role": "user", "text": "Um what's UM/UIM? I don't understand all these terms"},
+        {"role": "bot", "text": "UM/UIM stands for Uninsured/Underinsured Motorist coverage. It protects you if you're hit by a driver without adequate insurance."}
+      ]
+    },
+    {
+      "chat_id": "confusion-002",
+      "expected_category": "CONFUSION",
+      "expected_reason": "UNCLEAR_INSTRUCTIONS",
+      "history": [
+        {"role": "bot", "text": "Please provide your garaging address if different from your primary residence for rating purposes."},
+        {"role": "user", "text": "Huh? What's a garaging address? I park in my driveway"},
+        {"role": "bot", "text": "A garaging address is where your car is primarily parked overnight. If that's your home, they're the same!"}
+      ]
+    },
+    {
+      "chat_id": "confusion-003",
+      "expected_category": "CONFUSION",
+      "expected_reason": "JARGON",
+      "history": [
+        {"role": "bot", "text": "Your current policy has a 80/20 split with aggregate limits of 100/300/100. Want to keep those or adjust?"},
+        {"role": "user", "text": "I literally have no idea what any of that means lol"}
+      ]
+    },
+    {
+      "chat_id": "confusion-004",
+      "expected_category": "CONFUSION",
+      "expected_reason": "PROCESS",
+      "history": [
+        {"role": "bot", "text": "Great! I've sent a DocuSign to your email. Please sign and return, then text DONE when complete."},
+        {"role": "user", "text": "Wait, I thought we were doing everything by text? Now I have to check email too?"},
+        {"role": "bot", "text": "Yes, for legal documents we use secure electronic signatures via email. It only takes a minute!"}
+      ]
+    },
+    {
+      "chat_id": "benign-001",
+      "expected_category": "BENIGN",
+      "expected_reason": "BUSY",
+      "history": [
+        {"role": "bot", "text": "Hi! Ready to continue with your auto insurance quote?"},
+        {"role": "user", "text": "Hey yeah give me like 10 min, in a meeting"},
+        {"role": "bot", "text": "No problem! Just text back when you're ready."}
+      ]
+    },
+    {
+      "chat_id": "benign-002",
+      "expected_category": "BENIGN",
+      "expected_reason": "NATURAL_PAUSE",
+      "history": [
+        {"role": "bot", "text": "Your quote is $127/month. Would you like to proceed with this coverage?"},
+        {"role": "user", "text": "Let me think about it and talk to my husband tonight"},
+        {"role": "bot", "text": "Of course! Take your time. This quote is valid for 30 days. Just text back when you're ready."}
+      ]
+    },
+    {
+      "chat_id": "benign-003",
+      "expected_category": "BENIGN",
+      "expected_reason": "COMPARISON_SHOPPING",
+      "history": [
+        {"role": "bot", "text": "Based on your info, your monthly premium would be $145. Want me to break down the coverage details?"},
+        {"role": "user", "text": "That's more than I'm paying now. Let me check a few other quotes first"},
+        {"role": "bot", "text": "Absolutely! Let me know if you have any questions or want to adjust coverage to lower the price."}
+      ]
+    },
+    {
+      "chat_id": "benign-004",
+      "expected_category": "BENIGN",
+      "expected_reason": "NATURAL_PAUSE",
+      "history": [
+        {"role": "bot", "text": "What's your zip code?"},
+        {"role": "user", "text": "90210"},
+        {"role": "bot", "text": "Perfect! And what year is your vehicle?"}
+      ]
+    },
+    {
+      "chat_id": "benign-005",
+      "expected_category": "BENIGN",
+      "expected_reason": "POSITIVE_END",
+      "history": [
+        {"role": "bot", "text": "Your new policy is active! Your ID cards have been emailed to you. Anything else I can help with?"},
+        {"role": "user", "text": "Nope, thanks so much!"},
+        {"role": "bot", "text": "You're welcome! Drive safe, and don't hesitate to reach out if you need anything."}
+      ]
+    },
+    {
+      "chat_id": "high-friction-007",
+      "expected_category": "HIGH_FRICTION",
+      "expected_reason": "VIN_REQUEST",
+      "history": [
+        {"role": "bot", "text": "Thanks for your interest! Let's start with your VIN to get the most accurate quote."},
+        {"role": "user", "text": "I just bought the car, I don't even have the registration yet"},
+        {"role": "bot", "text": "Congratulations on the new car! You can find the VIN on the window sticker or purchase documents."},
+        {"role": "user", "text": "Those are all with the dealer still, picking up the car tomorrow"}
+      ]
+    },
+    {
+      "chat_id": "high-friction-008",
+      "expected_category": "HIGH_FRICTION",
+      "expected_reason": "GENERAL",
+      "history": [
+        {"role": "bot", "text": "To include your teen driver, I'll need their license number and driving record."},
+        {"role": "user", "text": "She literally just got her license yesterday, there's no record"},
+        {"role": "bot", "text": "That's fine! I just need the license number then."},
+        {"role": "user", "text": "She's at school, I don't have it memorized"}
+      ]
+    },
+    {
+      "chat_id": "confusion-005",
+      "expected_category": "CONFUSION",
+      "expected_reason": "JARGON",
+      "history": [
+        {"role": "bot", "text": "Would you like to add PIP coverage? It's required in your state with minimum $10k."},
+        {"role": "user", "text": "What is PIP? Never heard of it"},
+        {"role": "bot", "text": "PIP is Personal Injury Protection. It covers medical expenses regardless of who's at fault."},
+        {"role": "user", "text": "But I already have health insurance through work..."}
+      ]
+    },
+    {
+      "chat_id": "high-friction-009",
+      "expected_category": "HIGH_FRICTION",
+      "expected_reason": "DOCUMENT_UPLOAD",
+      "history": [
+        {"role": "bot", "text": "Almost there! Please upload photos of your car from 4 angles: front, back, left side, right side."},
+        {"role": "user", "text": "4 photos?? That seems excessive just to get a quote"},
+        {"role": "bot", "text": "I understand! The photos help us verify the condition and give you the best rate. You can take them all at once."},
+        {"role": "user", "text": "My phone storage is full, I can't take any pics right now"}
+      ]
+    },
+    {
+      "chat_id": "benign-006",
+      "expected_category": "BENIGN",
+      "expected_reason": "END_OF_DAY",
+      "history": [
+        {"role": "bot", "text": "Great progress! Just a few more questions. What's your current insurance company?"},
+        {"role": "user", "text": "Geico. Hey I gotta run, kids are home. Can we finish tomorrow?"},
+        {"role": "bot", "text": "Of course! I'll save your progress. Just text 'continue' tomorrow and we'll pick up right here."}
+      ]
+    },
+    {
+      "chat_id": "confusion-006",
+      "expected_category": "CONFUSION",
+      "expected_reason": "UNCLEAR_INSTRUCTIONS",
+      "history": [
+        {"role": "bot", "text": "Please reply with your preferred effective date in MM/DD/YYYY format."},
+        {"role": "user", "text": "January 15"},
+        {"role": "bot", "text": "I need the date in MM/DD/YYYY format. For example: 01/15/2026"},
+        {"role": "user", "text": "That's what I said, January 15th. Why isn't it working?"}
+      ]
+    },
+    {
+      "chat_id": "high-friction-010",
+      "expected_category": "HIGH_FRICTION",
+      "expected_reason": "GENERAL",
+      "history": [
+        {"role": "bot", "text": "For the best rate, I need your credit score range. Would you say it's Excellent (750+), Good (700-749), Fair (650-699), or Poor (below 650)?"},
+        {"role": "user", "text": "I don't really know my credit score off the top of my head"},
+        {"role": "bot", "text": "No worries! A general estimate works. Have you checked your credit recently?"},
+        {"role": "user", "text": "Not really, how do I even check that?"}
+      ]
+    }
+  ],
+  "metadata": {
+    "version": "1.0",
+    "created_at": "2026-02-03",
+    "total_transcripts": 22,
+    "by_category": {
+      "HIGH_FRICTION": 10,
+      "CONFUSION": 6,
+      "BENIGN": 6
+    },
+    "description": "Sample transcripts for testing Pulse classification engine"
+  }
+}

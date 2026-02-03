@@ -1,0 +1,259 @@
+{
+  "transcripts": [
+    {
+      "chat_id": "hf-ext-001",
+      "expected_category": "HIGH_FRICTION",
+      "history": [
+        {"role": "bot", "text": "Hi there! To quote your motorcycle, I need your VIN."},
+        {"role": "user", "text": "The bike is in storage for winter, 2 hours away"}
+      ]
+    },
+    {
+      "chat_id": "hf-ext-002",
+      "expected_category": "HIGH_FRICTION",
+      "history": [
+        {"role": "bot", "text": "I'll need your previous insurance declaration page to verify your claims history."},
+        {"role": "user", "text": "I switched insurers 3 times in 2 years, this is going to be a hassle to find all that"}
+      ]
+    },
+    {
+      "chat_id": "hf-ext-003",
+      "expected_category": "HIGH_FRICTION",
+      "history": [
+        {"role": "bot", "text": "Please provide the odometer reading from your vehicle."},
+        {"role": "user", "text": "I'd have to go outside to check that, it's freezing right now"}
+      ]
+    },
+    {
+      "chat_id": "hf-ext-004",
+      "expected_category": "HIGH_FRICTION",
+      "history": [
+        {"role": "bot", "text": "What's your mortgage company name and loan number?"},
+        {"role": "user", "text": "Ugh I'd have to dig through my paperwork for that"}
+      ]
+    },
+    {
+      "chat_id": "hf-ext-005",
+      "expected_category": "HIGH_FRICTION",
+      "history": [
+        {"role": "bot", "text": "I need your spouse's driver's license number to add them."},
+        {"role": "user", "text": "He's traveling for work this week, I don't have access to his stuff"}
+      ]
+    },
+    {
+      "chat_id": "hf-ext-006",
+      "expected_category": "HIGH_FRICTION",
+      "history": [
+        {"role": "bot", "text": "Can you send a photo of any vehicle damage?"},
+        {"role": "user", "text": "The scratch is tiny and hard to photograph, my phone camera isn't that good"}
+      ]
+    },
+    {
+      "chat_id": "hf-ext-007",
+      "expected_category": "HIGH_FRICTION",
+      "history": [
+        {"role": "bot", "text": "What's your bank routing number for autopay setup?"},
+        {"role": "user", "text": "I'm not giving banking info over text message, that seems sketchy"}
+      ]
+    },
+    {
+      "chat_id": "hf-ext-008",
+      "expected_category": "HIGH_FRICTION",
+      "history": [
+        {"role": "bot", "text": "I need the exact purchase date of your vehicle."},
+        {"role": "user", "text": "It was like 3 years ago, I'd have to find the bill of sale"}
+      ]
+    },
+    {
+      "chat_id": "hf-ext-009",
+      "expected_category": "HIGH_FRICTION",
+      "history": [
+        {"role": "bot", "text": "What security features does your home have? Alarm system brand and monitoring company?"},
+        {"role": "user", "text": "I have no idea what brand our alarm is, my landlord set it up"}
+      ]
+    },
+    {
+      "chat_id": "hf-ext-010",
+      "expected_category": "HIGH_FRICTION",
+      "history": [
+        {"role": "bot", "text": "Please upload your current declarations page showing coverage limits."},
+        {"role": "user", "text": "I think I threw that away when it came in the mail, let me check if I can find it online"}
+      ]
+    },
+    {
+      "chat_id": "conf-ext-001",
+      "expected_category": "CONFUSION",
+      "history": [
+        {"role": "bot", "text": "Do you want to add a PLUP to your policy?"},
+        {"role": "user", "text": "A what now?"}
+      ]
+    },
+    {
+      "chat_id": "conf-ext-002",
+      "expected_category": "CONFUSION",
+      "history": [
+        {"role": "bot", "text": "Your premium includes a CSL of $300k."},
+        {"role": "user", "text": "What does CSL mean?"}
+      ]
+    },
+    {
+      "chat_id": "conf-ext-003",
+      "expected_category": "CONFUSION",
+      "history": [
+        {"role": "bot", "text": "Would you like OEM parts coverage or aftermarket?"},
+        {"role": "user", "text": "I don't know the difference honestly"}
+      ]
+    },
+    {
+      "chat_id": "conf-ext-004",
+      "expected_category": "CONFUSION",
+      "history": [
+        {"role": "bot", "text": "Your BI/PD limits are currently 25/50/25. Recommended minimum is 100/300/100."},
+        {"role": "user", "text": "Those numbers mean nothing to me, can you explain in English?"}
+      ]
+    },
+    {
+      "chat_id": "conf-ext-005",
+      "expected_category": "CONFUSION",
+      "history": [
+        {"role": "bot", "text": "Reply A for actual cash value or B for agreed value coverage."},
+        {"role": "user", "text": "What's the difference between those two?"}
+      ]
+    },
+    {
+      "chat_id": "conf-ext-006",
+      "expected_category": "CONFUSION",
+      "history": [
+        {"role": "bot", "text": "Is your vehicle garaged or exposed?"},
+        {"role": "user", "text": "It's in my driveway... is that garaged or exposed?"}
+      ]
+    },
+    {
+      "chat_id": "conf-ext-007",
+      "expected_category": "CONFUSION",
+      "history": [
+        {"role": "bot", "text": "Do you want to stack your UM coverage?"},
+        {"role": "user", "text": "Stack it? Like on top of something? I don't get it"}
+      ]
+    },
+    {
+      "chat_id": "conf-ext-008",
+      "expected_category": "CONFUSION",
+      "history": [
+        {"role": "bot", "text": "Select your tort option: Full Tort or Limited Tort?"},
+        {"role": "user", "text": "Tort? Like the dessert?"}
+      ]
+    },
+    {
+      "chat_id": "ben-ext-001",
+      "expected_category": "BENIGN",
+      "history": [
+        {"role": "bot", "text": "Would you like to proceed with this quote?"},
+        {"role": "user", "text": "Yeah but I'm driving right now, can't really text"},
+        {"role": "bot", "text": "No problem! Text back when you're stopped."}
+      ]
+    },
+    {
+      "chat_id": "ben-ext-002",
+      "expected_category": "BENIGN",
+      "history": [
+        {"role": "bot", "text": "Your quote is ready! $89/month."},
+        {"role": "user", "text": "That's pretty good! Let me compare with one more company first"}
+      ]
+    },
+    {
+      "chat_id": "ben-ext-003",
+      "expected_category": "BENIGN",
+      "history": [
+        {"role": "bot", "text": "Ready to finalize your policy?"},
+        {"role": "user", "text": "I need to wait until payday, that's Friday"}
+      ]
+    },
+    {
+      "chat_id": "ben-ext-004",
+      "expected_category": "BENIGN",
+      "history": [
+        {"role": "bot", "text": "Thanks for the info! Any questions about the coverage?"},
+        {"role": "user", "text": "Nope, all good for now. I'll be in touch!"}
+      ]
+    },
+    {
+      "chat_id": "ben-ext-005",
+      "expected_category": "BENIGN",
+      "history": [
+        {"role": "bot", "text": "What's your date of birth?"},
+        {"role": "user", "text": "March 15, 1985"},
+        {"role": "bot", "text": "Got it! And your current address?"}
+      ]
+    },
+    {
+      "chat_id": "ben-ext-006",
+      "expected_category": "BENIGN",
+      "history": [
+        {"role": "bot", "text": "How many miles do you drive annually?"},
+        {"role": "user", "text": "Maybe 10-12k a year"},
+        {"role": "bot", "text": "Perfect. Do you use your vehicle for work commuting?"}
+      ]
+    },
+    {
+      "chat_id": "ben-ext-007",
+      "expected_category": "BENIGN",
+      "history": [
+        {"role": "bot", "text": "Your policy is now active! Safe driving!"},
+        {"role": "user", "text": "Awesome, thanks for making this easy!"}
+      ]
+    },
+    {
+      "chat_id": "ben-ext-008",
+      "expected_category": "BENIGN",
+      "history": [
+        {"role": "bot", "text": "Just checking in - still interested in that quote?"},
+        {"role": "user", "text": "Yes! Sorry been crazy busy at work. Can we continue tomorrow?"}
+      ]
+    },
+    {
+      "chat_id": "hf-ext-011",
+      "expected_category": "HIGH_FRICTION",
+      "history": [
+        {"role": "bot", "text": "What is your social security number? This is needed for the credit check."},
+        {"role": "user", "text": "I really don't want to share my SSN via text"}
+      ]
+    },
+    {
+      "chat_id": "hf-ext-012",
+      "expected_category": "HIGH_FRICTION",
+      "history": [
+        {"role": "bot", "text": "Please provide proof of prior insurance - a screenshot of your dec page works."},
+        {"role": "user", "text": "My old insurance was with my ex, I don't have access to that account anymore"}
+      ]
+    },
+    {
+      "chat_id": "hf-ext-013",
+      "expected_category": "HIGH_FRICTION",
+      "history": [
+        {"role": "bot", "text": "I need to verify your identity. Can you send a photo of your driver's license?"},
+        {"role": "user", "text": "I'm uncomfortable sending photos of my ID over text"}
+      ]
+    },
+    {
+      "chat_id": "hf-ext-014",
+      "expected_category": "HIGH_FRICTION",
+      "history": [
+        {"role": "bot", "text": "What's the ACV of your vehicle?"},
+        {"role": "user", "text": "I have no idea, how would I know that?"},
+        {"role": "bot", "text": "You can check KBB.com for an estimate!"},
+        {"role": "user", "text": "That seems like extra work, can't you just look it up?"}
+      ]
+    }
+  ],
+  "metadata": {
+    "version": "1.0",
+    "created_at": "2026-02-03",
+    "total_transcripts": 30,
+    "by_category": {
+      "HIGH_FRICTION": 14,
+      "CONFUSION": 8,
+      "BENIGN": 8
+    }
+  }
+}

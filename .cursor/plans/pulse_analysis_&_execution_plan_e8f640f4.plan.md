@@ -4,28 +4,28 @@ overview: "A two-mode analysis of Pulse (Stalled Conversation Resurrection Engin
 todos:
   - id: phase1-classifier
     content: "Phase 1: Build classification engine (classifier.py) with 3 categories, confidence scores, and JSON logging"
-    status: in_progress
+    status: completed
   - id: phase1-backend-status
     content: "Phase 1: Add check_backend_status() placeholder for multi-channel state awareness"
-    status: pending
+    status: completed
   - id: phase1-validation
     content: "Phase 1: Validate classifier on 50+ transcripts, achieve >80% human agreement"
-    status: pending
+    status: completed
   - id: phase2-nudge-gen
     content: "Phase 2: Build nudge generator with brand_persona parameter and template library"
-    status: pending
+    status: completed
   - id: phase2-friction-report
     content: "Phase 2: Build Friction Heatmap report showing drop-off by bot question (high standalone value)"
-    status: pending
+    status: completed
   - id: phase2-review-ui
     content: "Phase 2: Build Streamlit app with Classify/Nudge, Heatmap, and Review Queue tabs"
-    status: pending
+    status: completed
   - id: phase3-integration
     content: "Phase 3: Build webhook integration, real backend status check, and A/B test infrastructure"
-    status: pending
+    status: completed
   - id: phase4-autosend
     content: "Phase 4: Enable auto-send with confidence thresholds and multi-tenant configuration"
-    status: pending
+    status: completed
 isProject: false
 ---
 
