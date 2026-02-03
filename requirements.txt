@@ -1,0 +1,22 @@
+# Pulse - Stalled Conversation Resurrection Engine
+# Core dependencies
+
+# LLM Integration
+google-generativeai>=0.8.0
+
+# Web UI
+streamlit>=1.40.0
+
+# Data handling
+pydantic>=2.0.0
+python-dateutil>=2.8.0
+
+# Database
+sqlite-utils>=3.35.0
+
+# Visualization (for Friction Heatmap)
+plotly>=5.18.0
+pandas>=2.0.0
+
+# Development
+python-dotenv>=1.0.0
