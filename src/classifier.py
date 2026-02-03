@@ -92,7 +92,7 @@ def parse_llm_response(response_text: str) -> dict:
 
 def classify_transcript(
     transcript: TranscriptInput,
-    model_name: str = "gemini-2.5-flash-preview-05-20"
+    model_name: str = "gemini-2.5-flash"
 ) -> ClassificationResult:
     """
     Classify why a conversation stalled.
@@ -165,7 +165,7 @@ def classify_transcript(
 
 def classify_transcript_batch(
     transcripts: list[TranscriptInput],
-    model_name: str = "gemini-2.5-flash-preview-05-20"
+    model_name: str = "gemini-2.5-flash"
 ) -> list[ClassificationResult]:
     """
     Classify multiple transcripts.

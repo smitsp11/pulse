@@ -88,7 +88,7 @@ def generate_nudge(
     transcript: TranscriptInput,
     classification: ClassificationResult,
     brand_persona: BrandPersona = BrandPersona.HELPFUL_NEIGHBOR,
-    model_name: str = "gemini-2.5-flash-preview-05-20",
+    model_name: str = "gemini-2.5-flash",
 ) -> NudgeResult:
     """
     Generate a context-aware nudge for a stalled conversation.
@@ -156,7 +156,7 @@ def generate_nudge(
 def generate_nudge_batch(
     transcripts_and_classifications: list[tuple[TranscriptInput, ClassificationResult]],
     brand_persona: BrandPersona = BrandPersona.HELPFUL_NEIGHBOR,
-    model_name: str = "gemini-2.5-flash-preview-05-20",
+    model_name: str = "gemini-2.5-flash",
 ) -> list[NudgeResult]:
     """
     Generate nudges for multiple transcripts.
@@ -186,7 +186,7 @@ def generate_nudge_batch(
 def compare_brand_voices(
     transcript: TranscriptInput,
     classification: ClassificationResult,
-    model_name: str = "gemini-2.5-flash-preview-05-20",
+    model_name: str = "gemini-2.5-flash",
 ) -> dict[BrandPersona, NudgeResult]:
     """
     Generate nudges in both brand voices for comparison.
