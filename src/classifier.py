@@ -45,7 +45,7 @@ Important rules:
 4. Look at the LAST exchange specifically - what was the bot's last question and how did the user respond (or not respond)?
 
 Respond ONLY with valid JSON in this exact format:
-{"category": "HIGH_FRICTION" | "CONFUSION" | "BENIGN", "confidence": 0.0-1.0, "evidence": "exact quote from transcript"}
+{{"category": "HIGH_FRICTION" | "CONFUSION" | "BENIGN", "confidence": 0.0-1.0, "evidence": "exact quote from transcript"}}
 
 Transcript:
 {transcript}"""
