@@ -67,8 +67,18 @@ cp .env.example .env
 ### Running the App
 
 ```bash
-# Start the Streamlit app
-streamlit run app.py
+# From the project root, with venv activated:
+python -m streamlit run app.py
+```
+
+**If you see NumPy or pandas errors** (e.g. `numpy.dtype size changed`, `_ARRAY_API not found`), your shell is likely using Conda’s `streamlit` instead of the venv. Run with the venv’s Python explicitly:
+
+```bash
+# Linux / macOS
+./venv/bin/python -m streamlit run app.py
+
+# Windows (PowerShell)
+.\venv\Scripts\python.exe -m streamlit run app.py
 ```
 
 The app will open in your browser with three tabs:
